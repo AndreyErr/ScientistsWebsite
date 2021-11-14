@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    
-</body>
+  <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>Учёные химики</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'> <!--Главный всесайтовый CSS-->
+      <link rel='stylesheet' type='text/css' media='screen' href='css/chemists.css'> <!--CSS относится только к этой странице-->
+      <link rel='stylesheet' type='text/css' media='screen' href='css/subject.css'> <!--CSS относится ко всем предметам-->
+      <link rel="icon" type="image/png" href="photo/icon.png">
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='js/physicists.js'></script> <!--JS относится ко всем предметам-->
+      <script src='js/main.js'></script> <!--Главный всесайтовый JS-->
+  </head>
+  <body>
+
+    <!--Вступление-->
+    <header class="grad-enter">
+      <h1 class="title">Химики</h1>
+    </header>
+    <div class="about">
+      <hr class="devq">
+      <p>Химия — одна из важнейших и обширных областей естествознания, наука, изучающая вещества, также их состав и строение, их свойства, зависящие от состава и строения, их превращения, ведущие к изменению состава — химические реакции, а также законы и закономерности, которым эти превращения подчиняются. Является точной наукой. Химики изучают возможности и уже способны изменять самые основы нашего мира!</p>
+      <hr class="devq">
+    </div>
+
+    <!--Замылинные учёные-->
+      <div class="people-intro">
+        <h1 class="slogf">Изучите великих химиков</h1>
+        <nav>
+          <ul>
+            <li><a><img src="photo/Linus_Pauling.jpg"></a></li>
+            <li><a><img src="photo/Alfred_Nobel.jpg"></a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <!--Выбрать учёного-->
+    <ul class="card-list">
+      <li class="card">
+        <a href="scientists/Alfred_Nobel.html">
+          <div class="card-image">
+            <img src="photo/Alfred_Nobel.jpg" alt="Альфред Нобель" />
+          </div>
+          <div class="card-description">
+            <h2>Альфред Нобель</h2>
+            <p>Швеция, 1833-1896</p>
+          </div>
+        </a>
+      </li>
+      <li class="card">
+        <a href="scientists/Linus_Pauling.html">
+          <div class="card-image">
+            <img src="photo/Linus_Pauling.jpg" alt="Лайнус Полинг" />
+          </div>
+          <div class="card-description">
+            <h2>Лайнус Полинг</h2>
+            <p>США, 1901-1994</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <!--Кнопка-->
+    <div class="but">
+      <a href="index.html#menu"><div class="button">Вернуться на главную</div></a>
+    </div>
+
+    <footer>&copy; РТУ МИРЕА, Сорокин Андрей</footer>
+  </body>
 </html>

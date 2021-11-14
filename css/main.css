@@ -1,0 +1,35 @@
+  ::selection {
+    background: #00ADB5; /* Safari */
+  }
+  ::-moz-selection {
+    background: #00ADB5; /* Firefox */
+  }
+
+  /*Скролбар стили*/
+  body::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(37, 38, 68);        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(174, 174, 214, 0.425);    /* цвет плашки */
+    border-radius: 0;       /* закругления плашки */
+    border: 0;  /* padding вокруг плашки */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /*Подвал*/
+  footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+    background-color: #222831;
+}

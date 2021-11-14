@@ -3,39 +3,13 @@
   *{
     box-sizing: border-box;
   }
-
-
-  ::selection {
-    background: #00ADB5; /* Safari */
-    }
-    ::-moz-selection {
-    background: #00ADB5; /* Firefox */
-    }
-
-  /*Скролбар стили*/
-  body::-webkit-scrollbar {
-    width: 12px;               /* ширина scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background: rgb(37, 38, 68);        /* цвет дорожки */
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: rgba(174, 174, 214, 0.425);    /* цвет плашки */
-    border-radius: 0;       /* закругления плашки */
-    border: 0;  /* padding вокруг плашки */
-  }
-
-
-
   body {
-    margin: 0;
-    padding: 0;
     font-family: "Open Sans", sans-serif;
     background-color: #393E46;
   }
 
   /*Вступительное слово*/
-  .hero {
+  .top-word {
     padding: 1vh 0 2vh 0;
     color: #EEEEEE;
     background: linear-gradient(to right, #2a2231, #008aa6);
@@ -55,60 +29,58 @@
 
   /*Слоган с фото*/
   .intro {
-    box-sizing: border-box;
     position: relative;
     width: 100%;
     height: 75vh;
   }
-  .left {
+  .left-slog {
     float: left;
     height: 100%;
     width: 60%;
     padding: 0 3rem 0rem 5rem;
     display: table;
   }
-  .left > div {
+  .left-slog > div {
     display: table-cell;
     vertical-align: middle;
   }
   .slog {
     font-size: 9vh;
-    /*font-size: 80px;*/
     margin-bottom: 20px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-image: linear-gradient(165deg, rgb(182, 205, 50), rgb(0, 174, 255), rgb(122, 112, 216));
   }
-  .photo {
+  .scientists-photo {
     float: right;
     position: relative;
     width: 40%;
     height: 100%;
   }
-  .photo div {
+  .scientists-photo div {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     transition: clip .7s ease-in-out, z-index 0s .7s;
     display: table;
-    background-image: url('https://cs.pikabu.ru/post_img/big/2013/08/14/12/1376507447_514273426.jpg');
+    background-image: url("../photo/allsin.jpg");
     box-shadow:0 0 0 1280px rgba(0, 0, 0, 0.33) inset;
     -webkit-box-shadow: inset 8px 0px 13px 15px #393E46; 
     box-shadow: inset 8px 0px 13px 15px #393E46;
   }
 
   /*Карточки-ссылки*/
-  .menusiense {
+  .item-menu {
     margin: 0 auto;
     max-width: 45rem;
     padding-bottom: 3rem;
   }
-  .c-main-heading {
+  .introduction {
     font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 0.1875rem;
@@ -117,7 +89,7 @@
     text-transform: uppercase;
     color: #EEEEEE;
   }
-  .c-article__link {
+  .item-href {
     align-items: center;
     background-color:#EEEEEE;
     color: rgb(54, 54, 54);
@@ -130,33 +102,33 @@
     border-radius: 0.3rem;
     transition: 0.3s;
   }
-  .c-article__link:hover {
+  .item-href:hover {
     transition: 0.3s;
     background-color: #b6b6b6;
     color: rgb(0, 0, 0);
   }
-  .c-article__link:hover .c-article__heading{
+  .item-href:hover .item-introduction{
     transition: 0.3s;
     color: #030350;
   }
-  .c-article__link * {
+  .item-href * {
     pointer-events: none;
   }
-  .c-article__heading {
+  .item-introduction {
     font-size: 1.25rem;
     margin: 0.625rem 0;
   }
-  .c-article__content {
+  .item-description {
     line-height: 1.5;
     margin: 0.625rem 0;
   }
-  .c-article__img-wrapper {
+  .item-img {
     height: 6.25rem;
     margin-left: 1.25rem;
     min-width: 10rem;
     width: 10rem;
   }
-  .c-article__img {
+  .i-img {
     border-radius: 0.125rem;
     display: block;
     height: 100%;
@@ -165,38 +137,30 @@
     transition: filter 0.3s ease-in;
     width: 100%;
   }
-  .c-article__link:hover .c-article__img {
+  .item-href:hover .i-img {
     filter: grayscale(0);
   }
-
   @media screen and (max-width: 940px) {
-    .left {
+    .left-slog {
       width: 100%;
       height: 30%;
     }
-    .photo {
+    .scientists-photo {
       width: 100%;
       height: 70%;
       margin-bottom: 3rem;
+    }
+    .scientists-photo div {
+      -webkit-box-shadow: inset 0px 0px 11px 10px #393E46; 
+      box-shadow: inset 0px 0px 11px 10px #393E46;
     }
     .slog {
       font-size: 30px;
       margin-bottom: 20px;
     }
-    .menusiense {
+    .item-menu {
       margin: 0 auto;
       max-width: 37.5rem;
       padding-bottom: 3rem;
     }
   }
-
-
-  /*Подвал*/
-  footer{
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #EEEEEE;
-    background-color: #222831;
-}

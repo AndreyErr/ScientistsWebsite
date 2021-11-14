@@ -1,0 +1,17 @@
+  .grad-enter {
+    background-image: url("../photo/Quantum.jpg");
+  }
+  
+  .people-intro {
+    background-color: #222831;
+    color: #EEEEEE;
+  }
+
+  @media screen and (min-width: 801px) {
+    .people-intro nav ul li a:before {
+      box-shadow: inset 0 0 200px #222331;
+    }
+    .people-intro nav ul li a:hover:before {
+      box-shadow: inset 0 0 30px #222331;
+    }
+  }

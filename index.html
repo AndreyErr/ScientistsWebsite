@@ -5,82 +5,81 @@
       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
       <title>Учёные</title>
       <meta name='viewport' content='width=device-width, initial-scale=1'>
-      <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+      <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'> <!--Главный всесайтовый CSS-->
+      <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'> <!--CSS относится только к этой странице-->
       <link rel="icon" type="image/png" href="photo/icon.png">
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <script src='js/index.js'></script>
+      <script src='js/index.js'></script> <!--JS относится только к данной странице-->
+      <script src='js/main.js'></script> <!--Главный всесайтовый JS-->
   </head>
-<body>
+  <body> 
     
-<!--Начальное слово-->
-<section class="hero" id="top">
-    <h1 class="main-heading">Узнайте учёных получше</h1>
-</section>
+    <!--Начальное слово-->
+    <section class="top-word">
+      <h1 class="main-heading">Узнайте учёных получше</h1>
+    </section>
 
-<!--Слоган с фото-->
-<section class="intro">
-  <div class="left">
-    <div>
-      <h1 class="slog">Узнайте больше о людх, которые изменили мир!</h1>
-    </div>
-  </div>
-  <div class="photo">
-    <div></div>
-  </div>
-</section>
+    <!--Слоган с фото-->
+    <section class="intro">
+      <div class="left-slog">
+        <div><h1 class="slog">Узнайте больше о людх, которые изменили мир!</h1></div>
+      </div>
+      <div class="scientists-photo">
+        <div></div>
+      </div>  
+    </section>
 
-<!--Меню предметов-->
-  <section class="menusiense">
-    <h2 class="c-main-heading">Выберите направление</h2>
-
-    <article class="c-article">
-      <a class="c-article__link" href="physicists.html">
-        <div>
-          <header>
-            <h3 class="c-article__heading">Физика</h3>
-          </header>
-          <div class="c-article__content">
-            Учёные, осонающие и создающие физический мир вокруг нас.
+    <!--Меню предметов-->
+    <section class="item-menu" id="menu">
+      <h2 class="introduction">Выберите направление</h2>
+      <article class="item">
+        <a class="item-href" href="physicists.html">
+          <div>
+            <header>
+              <h3 class="item-introduction">Физика</h3>
+            </header>
+            <div class="item-description">
+              Учёные, осонающие и создающие физический мир вокруг нас.
+            </div>
           </div>
-        </div>
-        <div class="c-article__img-wrapper">
-          <img class="c-article__img" src="photo/phis.jpg" alt="Фото с физикой" />
-        </div>
-      </a>
-    </article>
-
-    <article class="c-article">
-      <a class="c-article__link" href="chemists.html">
-        <div>
-          <header>
-            <h3 class="c-article__heading">Химия</h3>
-          </header>
-          <div class="c-article__content">
-            Учёные, постягающие самые основы мира, его изменения и использования.
+          <div class="item-img">
+            <img class="i-img" src="photo/phis.jpg" alt="Фото с физикой" />
           </div>
-        </div>
-        <div class="c-article__img-wrapper">
-          <img class="c-article__img" src="photo/him.jpg" alt="Фото с химией" />
-        </div>
-      </a>
-    </article>
+        </a>
+      </article>
 
-    <article class="c-article">
-      <a class="c-article__link" href="cscientist.html">
-        <div>
-          <header>
-            <h3 class="c-article__heading">Информатика</h3>
-          </header>
-          <div class="c-article__content">
-            Учёные, буквально создающие новый мир.
+      <article class="item">
+        <a class="item-href" href="chemists.html">
+          <div>
+            <header>
+              <h3 class="item-introduction">Химия</h3>
+            </header>
+            <div class="item-description">
+              Учёные, постягающие самые основы мира, его изменения и использования.
+            </div>
           </div>
-        </div>
-        <div class="c-article__img-wrapper">
-          <img class="c-article__img" src="photo/inf.jpg" alt="Фото с информатикой" />
-        </div>
-      </a>
-    </article>
-  </section>
-  <footer>&copy; РТУ МИРЕА, Сорокин Андрей</footer>
-</body>
+          <div class="item-img">
+            <img class="i-img" src="photo/him.jpg" alt="Фото с химией" />
+          </div>
+        </a>
+      </article>
+
+      <article class="item">
+        <a class="item-href" href="cscientist.html">
+          <div>
+            <header>
+              <h3 class="item-introduction">Информатика</h3>
+            </header>
+            <div class="item-description">
+              Учёные, буквально создающие новый мир.
+            </div>
+          </div>
+          <div class="item-img">
+            <img class="i-img" src="photo/inf.jpg" alt="Фото с информатикой" />
+          </div>
+        </a>
+      </article>
+    </section>
+    <footer>&copy; РТУ МИРЕА, Сорокин Андрей</footer>
+  </body>
 </html>
