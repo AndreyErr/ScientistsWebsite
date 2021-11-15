@@ -1,0 +1,168 @@
+.introduction {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1875rem;
+    margin: 3.75rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EEEEEE;
+}
+
+/*Карты плюшек*/
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  } 
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    transition: 0.4s;
+  } 
+  .card .card-img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  .card .card-img img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  } 
+  .card .card-tit {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -80px;
+    height: 40px;
+    color: white;
+  }
+  .card:hover {
+    transform: scale(0.99, 0.99);
+  }
+
+/*Самореклама*/
+.add{
+    width: 100%;
+    height: auto;
+    background-color: #142F43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+    margin-top: 100px;
+    -webkit-box-shadow: 0px -16px 18px 6px #142F43; 
+    box-shadow: 0px -16px 18px 6px #142F43;
+}
+.add p{
+    color: #EEEEEE;
+    font-size: 5vh;
+    padding: 20px 0 0 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.add h3{
+    color: #EEEEEE;
+    font-size: 5vh;
+    padding: 0 0 20px 0;
+    margin-top: 0;
+    text-align: center
+}
+@media screen and (max-width: 400px) {
+    .add p{
+        font-size: 3vh;
+    }
+    .add h3{
+        font-size: 3vh;
+    }
+    .introduction {
+        font-size: 1rem;
+    }
+}
+
+
+ /*Форма*/
+  .connect {
+    background: #142F43;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 45px;
+    -webkit-box-shadow: 0px 16px 18px 6px #142F43; 
+    box-shadow: 0px 16px 18px 6px #142F43; 
+  }
+  .sec{
+    display: none;
+    opacity: 0;
+    position: relative;
+    padding: 3% 0 0 0;
+    font-size: 10vh;
+    text-align: center;
+    color: #34BE82;
+  }
+  .forma {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 0;
+    height: auto;
+    text-align: center;
+  }
+  .forma h1 {
+    font-size: 40px;
+    transition: 2s;
+    font-weight: 200;
+  }
+  form {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+  }
+  form input {
+    display: block;
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.2);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    font-size: 18px;
+    color: #EEEEEE;
+    transition-duration: 0.25s;
+    font-weight: 300;
+  }
+  form input:hover {
+    background-color: rgba(255,255,255,0.4);
+  }
+  form input:focus {
+    background-color: #EEEEEE;
+    color: #142F43;
+  }
+  form button {
+    appearance: none;
+    outline: 0;
+    background-color: #EEEEEE;
+    border: 0;
+    padding: 10px 15px;
+    color: #142F43;
+    border-radius: 3px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: 0.25s;
+  }
+  form button:hover {
+    background-color: rgba(255,255,255,0.4);
+  }
+  

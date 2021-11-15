@@ -1,1 +1,83 @@
-<!--Страница с формаой запроса обратной связи-->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>Стать автором</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'> <!--Главный всесайтовый CSS-->
+      <link rel='stylesheet' type='text/css' media='screen' href='css/subject.css'> <!--CSS относится ко всем предметам-->
+      <link rel='stylesheet' type='text/css' media='screen' href='css/permission.css'> <!--CSS относится только к этой странице-->
+      <link rel="icon" type="image/png" href="photo/icon.png">
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='js/permission.js'></script> <!--JS относится ко всем предметам-->
+      <script src='js/main.js'></script> <!--Главный всесайтовый JS-->
+  </head>
+  <body>
+
+    <!--Вступление-->
+    <header class="grad-enter">
+        <h1 class="title">Стать автором</h1>
+    </header>
+    <div class="about">
+        <hr class="devq">
+        <p>Хотите писать уникальные завораживающие статьи или исправлять существующие? Станьте автором и получите данную возможность!</p>
+        <hr class="devq">
+    </div>
+
+    <h2 class="introduction">Возможности, что у вас появятся</h2>
+
+    <!--Карты плюшек-->
+    <div class="cards-list">
+        <div class="card">
+            <div class="card-img"> 
+                <img src="photo/gif/create.gif"> 
+            </div>
+            <div class="card-tit">
+                <p>Создавать контент</p>
+            </div>
+        </div>         
+        <div class="card">
+            <div class="card-img">
+                <img src="photo/gif/edit.gif">
+            </div>
+            <div class="card-tit">
+                <p>Редактировать контент</p>
+            </div>
+        </div>          
+        <div class="card">
+            <div class="card-img">
+                <img src="photo/gif/comu.gif">
+            </div>
+            <div class="card-tit">
+                <p>Доступ к сообществу</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Самореклама-->
+    <div class="add">
+        <p><b><i>2548</i></b> авторов уже с нами!</p>
+        <h3>Присоединяйтесь и вы!</h3>
+    </div>
+
+    <!--Форма-->
+    <div class="connect">
+        <div class="forma">
+            <h1 class="sec" id="id">Добро пожаловать в сообщество</h1>
+            <form class="form">
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="E-mail" required>
+                <button type="submit" id="login-button">Присоедениться</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Кнопка-->
+    <div class="but">
+        <a href="index.html#menu"><div class="button">Вернуться на главную</div></a>
+    </div>
+
+    <footer>&copy; РТУ МИРЕА, Сорокин Андрей</footer>
+  </body>
+</html>

@@ -8,12 +8,12 @@
     
   /*Вступление*/
   .devq {
-    margin: 32px 0 32px 0; 
+    margin: 30px 0 30px 0; 
   }
   .grad-enter {
     position: relative;
     height: 50vh;
-    box-shadow: inset 0px 0px 1000px 1000px rgba(34, 60, 80, 0.2);
+    box-shadow: inset 0px 0px 1000px 1000px rgba(34, 60, 80, 0.3);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -169,24 +169,4 @@
   }
   .card-description > p {
     margin: 0;
-  }
-
-  /*Кнопка*/
-  .but a{
-    text-decoration: none;
-  }
-  .button {
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid #00ADB5;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-    cursor: default;
-    transition: 0.3s;
-    color: #EEEEEE;
-  }
-  .button:hover {
-    box-shadow: 0px 0px 0px 3px #00ADB5;
   }

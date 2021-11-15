@@ -23,6 +23,26 @@
     padding: 0;
   }
 
+  /*Кнопка*/
+  .but a{
+    text-decoration: none;
+  }
+  .button {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #00ADB5;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    transition: 0.3s;
+    color: #EEEEEE;
+  }
+  .button:hover {
+    box-shadow: 0px 0px 0px 3px #00ADB5;
+  }
+
 
   /*Подвал*/
   footer{
