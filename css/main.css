@@ -52,4 +52,10 @@
     align-items: center;
     color: #EEEEEE;
     background-color: #222831;
-}
+  }
+
+  @media screen and (max-width: 380px) {
+    footer{
+      font-size: 13px;
+    }
+  }
