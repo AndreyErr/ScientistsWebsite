@@ -1,0 +1,24 @@
+  .grad-enter {
+    height: 100vh;
+    background-position: top;
+    background-image: url("../photo/scientists/tu.png");
+  }
+
+  @media screen and (max-width: 410px) {
+    .grad-enter {
+        height: 50vh;
+        background-position: center;
+      }
+  }
+  .paralax-img:nth-child(2) {
+    background-image: url("../photo/scientists/al1.jpg");
+  }
+  .paralax-img:nth-child(4) {
+    background-image: url("../photo/scientists/al2.png");
+  }
+  .paralax-img:nth-child(6) {
+    background-image: url("../photo/scientists/al3.jpg");
+  }
+  .paralax-img:nth-child(8) {
+    background-image: url("../photo/scientists/al4.jpeg");
+  }

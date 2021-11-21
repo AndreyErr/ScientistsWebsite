@@ -1,3 +1,4 @@
+//Паралакс шапка
 $(window).scroll(function (){
 	var wScroll = $(this).scrollTop();	
 	$('header h1').css({
@@ -8,6 +9,7 @@ $(window).scroll(function (){
 	});	*/
 });
 
+//Вобор изображения для шапки
 function getImage() {
     if(innerWidth > 500){
         const random = Math.floor(Math.random() * 4); //Кол-во фото  
@@ -20,10 +22,13 @@ function getImage() {
         });
     }
 };
+
+//Замедление исполнения
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+//Подмена формы
 window.onload = function() {
     getImage();
     $("#login-button").click(function(event){
