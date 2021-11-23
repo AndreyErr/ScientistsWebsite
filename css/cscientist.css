@@ -1,7 +1,9 @@
+  /*Главное фото*/
   .grad-enter {
     background-image: url("../photo/infM.jpg");
   }
 
+  /*Цвет фона залыленных фото*/
   .people-intro {
     background-color: #1d1e2b;
     color: #EEEEEE;

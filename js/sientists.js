@@ -1,4 +1,4 @@
-//Паралакс шапка
+//Паралакс шапка с разной скоростью при разных экранах
 $(window).scroll(function (){
 	var wScroll = $(this).scrollTop();
 	if(innerWidth > 410){	
