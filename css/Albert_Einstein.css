@@ -1,0 +1,33 @@
+.grad-enter {
+    height: 100vh;
+    background-position: top;
+    background-image: url("../photo/scientists/ejnshtejn.jpg");
+  }
+
+  @media screen and (max-width: 410px) {
+    .grad-enter {
+        height: 50vh;
+        background-position: center;
+      }
+  }
+  .paralax-img:nth-child(2) {
+    background-image: url("../photo/scientists/en1.jpg");
+  }
+  .paralax-img:nth-child(4) {
+    background-image: url("../photo/scientists/en2.jpg");
+  }
+  .paralax-img:nth-child(6) {
+    background-image: url("../photo/scientists/en3.jpg");
+  }
+  .paralax-img:nth-child(8) {
+    background-image: url("../photo/scientists/en4.jpg");
+  }
+  .paralax-img:nth-child(10) {
+    background-image: url("../photo/scientists/en5.png");
+  }
+  .paralax-img:nth-child(12) {
+    background-image: url("../photo/scientists/en6.jpg");
+  }
+  .paralax-img:nth-child(14) {
+    background-image: url("../photo/scientists/en7.jpg");
+  }
