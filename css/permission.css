@@ -13,15 +13,21 @@
   .cards-list {
     z-index: 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   } 
   .card {
     margin: 30px auto;
     width: 300px;
     height: 300px;
     border-radius: 40px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
   } 
   .card .card-img {
@@ -32,7 +38,8 @@
   .card .card-img img {
     width: inherit;
     height: inherit;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   } 
   .card .card-tit {
     text-align: center;
@@ -44,7 +51,9 @@
     color: white;
   }
   .card:hover {
-    transform: scale(0.99, 0.99);
+    -webkit-transform: scale(0.99, 0.99);
+        -ms-transform: scale(0.99, 0.99);
+            transform: scale(0.99, 0.99);
   }
   
   /*Самореклама*/
@@ -52,10 +61,19 @@
     width: 100%;
     height: auto;
     background-color: #142F43;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 25px;
     margin-top: 100px;
     -webkit-box-shadow: 0px -16px 18px 6px #142F43; 
@@ -118,6 +136,8 @@
   }
   .forma h1 {
     font-size: 40px;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
     font-weight: 200;
   }
@@ -128,7 +148,9 @@
   }
   form input {
     display: block;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     outline: 0;
     border: 1px solid rgba(255,255,255,0.4);
     background-color: rgba(255,255,255,0.2);
@@ -139,7 +161,9 @@
     text-align: center;
     font-size: 18px;
     color: #EEEEEE;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
     font-weight: 300;
   }
   form input:hover {
@@ -150,7 +174,9 @@
     color: #142F43;
   }
   form button {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     outline: 0;
     background-color: #EEEEEE;
     border: 0;
@@ -160,7 +186,9 @@
     width: 250px;
     cursor: pointer;
     font-size: 18px;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
   }
   form button:hover {
     background-color: rgba(255,255,255,0.4);

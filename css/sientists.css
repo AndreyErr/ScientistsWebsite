@@ -1,6 +1,7 @@
   /*Общие стили*/
   *{
-    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
   }  
   body {
     font-family: 'Open Sans', sans-serif;
@@ -8,6 +9,7 @@
   }
   a {
     -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
   }
 
@@ -15,6 +17,7 @@
   /*Меню*/
 	.menu {
     -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 		background: #222831e7;
 		height: 100vh;
@@ -61,6 +64,8 @@
     position: relative;
     left: 50%;
     padding: 10px 5px 14px 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     border-radius: 0 0 5px 0;
   }
@@ -113,6 +118,7 @@
 		margin-left: -20px;
 		opacity: 0;
 		-webkit-transition: all 200ms ease-in-out;
+		-o-transition: all 200ms ease-in-out;
 		transition: all 200ms ease-in-out;
 	}
 	.menu-item a {
@@ -130,13 +136,20 @@
   .grad-enter {
     position: relative;
     width: 100%;
-    box-shadow: inset 0px 0px 1000px 1000px rgba(34, 60, 80, 0.3);
+    -webkit-box-shadow: inset 0px 0px 1000px 1000px rgba(34, 60, 80, 0.3);
+            box-shadow: inset 0px 0px 1000px 1000px rgba(34, 60, 80, 0.3);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .grad-enter .title {
     margin: 0;
@@ -171,9 +184,15 @@
   /*Статья*/
   .paralax-img {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -195,34 +214,63 @@
     text-transform: uppercase;
   }
   .border {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #393e46d2;
     color: #eeeeeee0;
     padding: 20px;
   }
   .textdascr-img{ /*Для 1 изображения*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .textdascr-img-more{ /*Для более 1 изображения*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .iimg{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     margin: 10px;
   }
   .iimg img{
-    box-shadow: inset 0px 0px 1000px 1000px rgba(34, 60, 80, 0.9);
+    -webkit-box-shadow: inset 0px 0px 1000px 1000px rgba(34, 60, 80, 0.9);
+            box-shadow: inset 0px 0px 1000px 1000px rgba(34, 60, 80, 0.9);
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -250,9 +298,15 @@
       text-transform: uppercase;
     }
     .border {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       background-color: #393e463b;
       color: #eeeeeebb;
       padding: 10px;
@@ -263,10 +317,17 @@
       font-size: 3vw;
     }
     .textdascr-img-more{ /*Для более 1 изображения*/
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       text-align: center;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       max-width: 400px;
     }
     .iimg{
@@ -290,9 +351,15 @@
     text-decoration: none;
   }
   .aw {
+    -webkit-transition-property: margin, background-color, border-color;
+    -o-transition-property: margin, background-color, border-color;
     transition-property: margin, background-color, border-color;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out, ease, ease;
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in-out, ease, ease;
+         -o-transition-timing-function: ease-in-out, ease, ease;
+            transition-timing-function: ease-in-out, ease, ease;
     position: absolute;
     left: -20px;
     width:100%;
@@ -311,9 +378,15 @@
     border-color:#00ADB5;
   }
   .sm h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-transform: uppercase;
     color: #EEEEEE;
     font-size: 2em;
@@ -322,26 +395,42 @@
 
   /*Ссылки*/
   .links h2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-transform: uppercase;
     color: #eee;
     font-size: 2em;
   }
   .link:target {
-    animation: yellowflash-outline 4s;
+    -webkit-animation: yellowflash-outline 4s;
+            animation: yellowflash-outline 4s;
   }
   .link a{
     color: #00ADB5;
     text-decoration: none;
   }
   .links ol li:target {
-    animation: yellowflash-bg 4s;
+    -webkit-animation: yellowflash-bg 4s;
+            animation: yellowflash-bg 4s;
+  }
+  @-webkit-keyframes yellowflash-bg {
+    from { background: #FFCA03; }
+    to   { background: transparent; }
   }
   @keyframes yellowflash-bg {
     from { background: #FFCA03; }
     to   { background: transparent; }
+  }
+  @-webkit-keyframes yellowflash-outline {
+    from { outline: 10px solid #FFCA03; }
+    to   { outline: 10px solid transparent; }
   }
   @keyframes yellowflash-outline {
     from { outline: 10px solid #FFCA03; }
@@ -377,16 +466,22 @@
     line-height: 1.5;
     margin: 40px auto;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: center;
   }
   .card-img img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
-    object-position: 50% 0%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 0%;
+       object-position: 50% 0%;
   }
   .card {
     background-color: #222831;
@@ -395,6 +490,8 @@
     padding: 1.25rem;
     margin: 10px;
     position: relative;
+    -webkit-transition: 0.15s ease-in;
+    -o-transition: 0.15s ease-in;
     transition: 0.15s ease-in;
     width: 300px;
     text-decoration: none;
@@ -403,7 +500,8 @@
     text-decoration: none;
   }
   .card:hover, .card:focus-within {
-    box-shadow: 0 0 0 2px #00ADB5;
+    -webkit-box-shadow: 0 0 0 2px #00ADB5;
+            box-shadow: 0 0 0 2px #00ADB5;
   }
   .card-img {
     border-radius: 10px;
@@ -413,19 +511,35 @@
     margin-top: 1.5rem;
     font-weight: 600;
     font-size: 1.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #EEEEEE;
   }
   .card-footer {
     margin-top: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .card-sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #ffffff52;
   }

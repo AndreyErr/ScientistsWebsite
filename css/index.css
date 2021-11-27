@@ -1,7 +1,8 @@
   
   /*Основные свойства*/
   *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   body {
     font-family: "Open Sans", sans-serif;
@@ -12,9 +13,10 @@
   .top-word {
     padding: 1vh 0 2vh 0;
     color: #EEEEEE;
+    background: -webkit-gradient(linear, left top, right top, from(#2a2231), to(#008aa6));
+    background: -o-linear-gradient(left, #2a2231, #008aa6);
     background: linear-gradient(to right, #2a2231, #008aa6);
     -webkit-box-shadow: 0px -30px 13px -9px #393E46 inset;
-    -moz-box-shadow: 0px -30px 13px -9px #393E46 inset;
     box-shadow: 0px -30px 13px -9px #393E46 inset;
   }
   .main-heading {
@@ -49,6 +51,7 @@
     margin-bottom: 20px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-image: -o-linear-gradient(285deg, rgb(182, 205, 50), rgb(0, 174, 255), rgb(122, 112, 216));
     background-image: linear-gradient(165deg, rgb(182, 205, 50), rgb(0, 174, 255), rgb(122, 112, 216));
   }
   .scientists-photo {
@@ -66,6 +69,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    -webkit-transition: clip .7s ease-in-out, z-index 0s .7s;
+    -o-transition: clip .7s ease-in-out, z-index 0s .7s;
     transition: clip .7s ease-in-out, z-index 0s .7s;
     display: table;
     background-image: url("../photo/allsin.jpg");
@@ -90,24 +95,36 @@
     color: #EEEEEE;
   }
   .item-href {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color:#EEEEEE;
     color: rgb(54, 54, 54);
     color:#222831;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 1.875rem 0;
     padding: 1.25rem;
     text-decoration: none;
     border-radius: 0.3rem;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
   }
   .item-href:hover {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     background-color: #b6b6b6;
     color: rgb(0, 0, 0);
   }
   .item-href:hover .item-introduction{
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     color: #030350;
   }
@@ -132,13 +149,20 @@
     border-radius: 0.125rem;
     display: block;
     height: 100%;
-    filter: grayscale(1);
-    object-fit: cover;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: -webkit-filter 0.3s ease-in;
+    transition: -webkit-filter 0.3s ease-in;
+    -o-transition: filter 0.3s ease-in;
     transition: filter 0.3s ease-in;
+    transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
     width: 100%;
   }
   .item-href:hover .i-img {
-    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
   }
   @media screen and (max-width: 940px) {
     .left-slog {
@@ -185,13 +209,17 @@
       padding-bottom: 0;
     }
     .item-href {
-      flex-direction: column-reverse;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
       text-align: center;
     }
     .item-img {
       margin-left: 0;
     }
     .i-img {
-      filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+              filter: grayscale(0);
     }
   }
