@@ -1,0 +1,6 @@
+  /*Главное фото*/
+  .grad-enter {
+    height: 50vh;
+    background-position: center;
+    background-image: url("../photo/pol.jpg");
+  }

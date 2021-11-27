@@ -70,9 +70,21 @@ footer{
   color: #EEEEEE;
   background-color: #222831;
 }
+footer a{
+  margin-left: 15px;
+  text-decoration: none;
+  color: #EEEEEE;
+}
+footer a:hover{
+  text-decoration: none;
+  color: #eeeeeeb4;
+}
 
 @media screen and (max-width: 380px) {
   footer{
     font-size: 13px;
+  }
+  footer a{
+    margin-left: 0px;
   }
 }
